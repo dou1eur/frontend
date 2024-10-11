@@ -4,6 +4,7 @@ body {
 
     .content{
         display: flex;
+        margin: 20px;
     }
     .content-left, .content-right{
         background: white;
