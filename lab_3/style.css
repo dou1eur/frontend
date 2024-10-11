@@ -39,11 +39,30 @@ body {
         border-radius: 10px;
     }
 
+    .container {
+        background-color: white; 
+        text-align: center; 
+        padding: 20px; 
+    }
+    
+    .block {
+        width: 200px; 
+        height: 200px; 
+        background-color: #c3e0ff; 
+        margin: auto;
+    }
+    
+    .center-image {
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+
     h1{
         font-size: xx-large;
         text-align: center;
         color: #4a007f; 
-        width: 600px;
+        width: 900px;
         border-radius: 10px;
         display: inline-block;
     }
