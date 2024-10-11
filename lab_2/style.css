@@ -5,25 +5,28 @@ body {
     .content{
         display: flex;
     }
-    .content-left{
-        width: 60%;
+    .content-left, .content-right{
+        background: white;
+        margin: 20px;
         padding: 30px;
+        border-radius: 20px;
     }
     .content-right{
-        width: 40%;
-        padding: 20%;
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    .content-right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 
     h1{
         font-size: xx-large;
         text-align: center;
         color: #4a007f; 
-        margin: 50px 0; 
-        padding: 20px; 
-        background: rgba(255, 255, 255, 0.755); 
-        width: 400px;
+        width: 600px;
         border-radius: 10px;
         display: inline-block;
     }
@@ -49,10 +52,6 @@ body {
     a {
         color: #4a007f;
         text-decoration: none;
-    }
-
-    img{
-        width: 500px;
     }
 
     a:hover {
