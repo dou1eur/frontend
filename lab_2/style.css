@@ -2,6 +2,20 @@ body {
     background: hsl(300, 39%, 80%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+    .content{
+        display: flex;
+    }
+    .content-left{
+        width: 60%;
+        padding: 30px;
+    }
+    .content-right{
+        width: 40%;
+        padding: 20%;
+        display: flex;
+        align-items: center;
+    }
+
     h1{
         font-size: xx-large;
         text-align: center;
@@ -35,6 +49,10 @@ body {
     a {
         color: #4a007f;
         text-decoration: none;
+    }
+
+    img{
+        width: 500px;
     }
 
     a:hover {
