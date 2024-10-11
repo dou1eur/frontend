@@ -58,6 +58,21 @@ body {
         margin: auto;
     }
 
+    .container-2 {
+        background-color: white; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 400px; 
+        margin-top: 20px; 
+    }
+    
+    .block-2 {
+        width: 200px; 
+        height: 200px; 
+        background-color: #c3e0ff; 
+    }
+
     h1{
         font-size: xx-large;
         text-align: center;
