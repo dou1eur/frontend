@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Лабораторная работа №4</title>
+    <link rel="stylesheet" href="table.css"/>
+</head>
+<body>
+    <div class="header">
+        <a href="page1.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+    <h1>Таблица студентов</h1>
+    <table>
+        <caption>Список студентов</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ФИО студента</th>
+                <th>Номер зачетной книжки</th>
+                <th>Номер группы</th>
+                <th>Пол</th>
+                <th>Возраст</th>
+                <th>Форма поступления</th>
+                <th>Название направления</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="first">
+                <td>1</td>
+                <td>Загайский Марк Владимирович</td>
+                <td>111111</td>
+                <td>6304</td>
+                <td>М</td>
+                <td>20</td>
+                <td>Очная</td>
+                <td>ПМИ</td>
+            </tr>
+            <tr tr class="second">
+                <td>2</td>
+                <td>Кудрявцев Иван Владиславович</td>
+                <td>222222</td>
+                <td>6211</td>
+                <td>М</td>
+                <td>18</td>
+                <td>Очная</td>
+                <td>ИБАС</td>
+            </tr>
+            <tr class="third">
+                <td>3</td>
+                <td>Кудряшова Ульяна Александровна</td>
+                <td>333333</td>
+                <td>6301</td>
+                <td>Ж</td>
+                <td>20</td>
+                <td>Очная</td>
+                <td>ПМФ</td>
+            </tr>
+            <tr tr class="first">
+                <td>4</td>
+                <td>Петрова Мария Сергеевна</td>
+                <td>444444</td>
+                <td>6301</td>
+                <td>Ж</td>
+                <td>21</td>
+                <td>Заочная</td>
+                <td>ПМФ</td>
+            </tr>
+            <tr class="second">
+                <td>5</td>
+                <td>Шерматова Елена Андреевна</td>
+                <td>555555</td>
+                <td>6312</td>
+                <td>Ж</td>
+                <td>20</td>
+                <td>Очная</td>
+                <td>ИБАС</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form">
+        <h2>Ввод новых данных</h2>
+        <form id="form">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+            <label for="name">ФИО студента:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="studentBook">Номер зачетной книжки:</label>
+            <input type="text" id="studentBook" name="studentBook" required>
+            <label for="group">Номер группы:</label>
+            <input type="text" id="group" name="group" required>
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="admissionForm">Форма поступления:</label>
+            <input type="text" id="admissionForm" name="admissionForm" required>
+            <label for="direction">Название направления:</label>
+            <input type="text" id="direction" name="direction" required>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>    
+</body>
+</html>
