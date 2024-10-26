@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Лабораторная работа №4</title>
     <link rel="stylesheet" href="table.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -26,8 +27,8 @@
                 <th>Название направления</th>
             </tr>
         </thead>
-        <tbody>
-            <tr class="first">
+        <tbody id="table">
+            <tr>
                 <td>1</td>
                 <td>Загайский Марк Владимирович</td>
                 <td>111111</td>
@@ -37,7 +38,7 @@
                 <td>Очная</td>
                 <td>ПМИ</td>
             </tr>
-            <tr tr class="second">
+            <tr>
                 <td>2</td>
                 <td>Кудрявцев Иван Владиславович</td>
                 <td>222222</td>
@@ -47,7 +48,7 @@
                 <td>Очная</td>
                 <td>ИБАС</td>
             </tr>
-            <tr class="third">
+            <tr>
                 <td>3</td>
                 <td>Кудряшова Ульяна Александровна</td>
                 <td>333333</td>
@@ -57,7 +58,7 @@
                 <td>Очная</td>
                 <td>ПМФ</td>
             </tr>
-            <tr tr class="first">
+            <tr>
                 <td>4</td>
                 <td>Петрова Мария Сергеевна</td>
                 <td>444444</td>
@@ -67,7 +68,7 @@
                 <td>Заочная</td>
                 <td>ПМФ</td>
             </tr>
-            <tr class="second">
+            <tr>
                 <td>5</td>
                 <td>Шерматова Елена Андреевна</td>
                 <td>555555</td>
@@ -92,8 +93,8 @@
             <input type="text" id="group" name="group" required>
             <label for="gender">Пол:</label>
             <select id="gender" name="gender" required>
-                <option value="male">Мужской</option>
-                <option value="female">Женский</option>
+                <option value="М">Мужской</option>
+                <option value="Ж">Женский</option>
             </select>
             <label for="age">Возраст:</label>
             <input type="number" id="age" name="age" required>
@@ -103,6 +104,20 @@
             <input type="text" id="direction" name="direction" required>
             <button type="submit">Добавить</button>
         </form>
-    </div>    
+    </div> 
+    <script>
+        $(function() {
+            $("#form").submit(function (event) {
+                event.preventDefault(); 
+                var form = event.target;
+                var formData = new FormData(form);
+                var studentData = Object.fromEntries(formData.entries());
+                var id = studentData.id;
+                $("#table").append(
+                );
+                form.reset();
+            });
+        });
+    </script>
 </body>
 </html>
