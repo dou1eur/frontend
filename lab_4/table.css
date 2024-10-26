@@ -43,15 +43,15 @@ body {
         color: #4a007f;
     }
 
-    .first {
+    tbody tr:nth-child(3n+1) {
         background-color: #dbfaea;
     }
 
-    .second {
+    tbody tr:nth-child(3n+2) {
         background-color: #fee3e3;
     }
 
-    .third {
+    tbody tr:nth-child(3n+3) {
         background-color: #e0e3fa;
     }
 
