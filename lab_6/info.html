@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №6</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+          <div class="container-fluid">
+            <h1 class="navbar-brand">Киану Ривз</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="info.html">Информация</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="films.html">Фильмы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="row">
+          <div class="col-3">
+            <aside>
+              <h5>Навигация</h5>
+              <div class="scrollspy_container">
+                <div class="row">
+                  <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#carouselExampleCaptions">Фотографии</a>
+                    <a class="list-group-item list-group-item-action" href="#cards_container">Карточки с фильмами</a>
+                    <a class="list-group-item list-group-item-action" href="#collapse_container">Об актёре</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-9">
+            <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner" id="carouselExampleCaptions">
+                <div class="carousel-item active">
+                    <img src="rivz1.jpg" class="d-block w-100" alt="Фото 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="rivz2.jpg" class="d-block w-100" alt="Фото 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="rivz3.jpg" class="d-block w-100" alt="Фото 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="rivz4.jpg" class="d-block w-100" alt="Фото 4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущая</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующая</span>
+              </button>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-4" id="cards_container">
+              <div class="col">
+                  <div class="card h-100">
+                      <img src="poster1.jpg" class="card-img-top" alt="На гребне волны">
+                      <div class="card-body">
+                      <h5 class="card-title">На гребне волны</h5>
+                      <p class="card-text">Таинственная банда серфингистов среди белого дня совершает ограбления банков. Полиция и ФБР поражены профессиональностью и скоростью проведения преступлений. Следствие ведет молодой и претенциозный агент ФБР, который, рискуя жизнью, внедряется в банду и раскрывает это дело, но неожиданно для самого себя он осознает, что вернуться к нормальной жизни он уже не сможет</p>
+                      </div>
+                      <div class="card-footer">
+                      <a href="https://www.kinopoisk.ru/film/1990/" class="btn btn-primary" target="_blank">Подробнее</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <img src="poster2.jpg" class="card-img-top" alt="Джон Уик 4">
+                      <div class="card-body">
+                      <h5 class="card-title">Джон Уик 4</h5>
+                      <p class="card-text">Оставляя за собой горы трупов, Джон Уик продолжает скрываться от всевозможных наёмных убийц, и теперь охоту на него возглавляет молодой и честолюбивый член Правления по имени Маркиз. Два управляющих отелями «Континенталь» в Нью-Йорке и Осаке, решившие по старой дружбе помочь своенравному киллеру, уже жестоко за это поплатились, но внезапно Джон узнаёт способ выбраться из этой, казалось бы, безвыходной ситуации</p>
+                      </div>
+                      <div class="card-footer">
+                      <a href="https://www.kinopoisk.ru/film/1267348/" class="btn btn-primary" target="_blank">Подробнее</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <img src="poster3.jpg" class="card-img-top" alt="История научной фантастики">
+                      <div class="card-body">
+                      <h5 class="card-title">История научной фантастики</h5>
+                      <p class="card-text">Джеймс Кэмерон вместе с шестью знаковыми персонами в мире кинематографа — Гильермо дель Торо, Джорджем Лукасом, Кристофером Ноланом, Арнольдом Шварценеггером, Ридли Скоттом и Стивеном Спилбергом — обсудит развитие жанра фантастики и его влияние на зрителей по всему миру</p>
+                      </div>
+                      <div class="card-footer">
+                      <a href="https://www.kinopoisk.ru/series/1142598/?utm_referrer=www.google.com" class="btn btn-primary" target="_blank">Подробнее</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <img src="poster4.jpg" class="card-img-top" alt="Матрица">
+                      <div class="card-body">
+                          <h5 class="card-title">Матрица</h5>
+                          <p class="card-text">Жизнь Томаса Андерсона разделена на две части: днём он — самый обычный офисный работник, получающий нагоняи от начальства, а ночью превращается в хакера по имени Нео, и нет места в сети, куда он бы не смог проникнуть. Но однажды всё меняется. Томас узнаёт ужасающую правду о реальности</p>
+                      </div>
+                      <div class="card-footer">
+                          <a href="https://www.kinopoisk.ru/series/1142598/?utm_referrer=www.google.com" class="btn btn-primary" target="_blank">Подробнее</a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item" id="collapse_container">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Биография
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Канадский актёр, продюсер, музыкант (бас-гитарист)<br>
+                                Полное имя — <mark>Киану Чарльз</mark><br>
+                                Родился 2 сентября 1964 года в Бейруте, Ливан.
+                                Отец актера — наполовину китаец, наполовину гаваец из состоятельной семьи, геолог по профессии, познакомился со своей будущей женой Патрисией, английской актрисой варьете, когда проводил отпуск в Ливане, чем и объясняется столь экзотическое место рождения Киану Ривза. Имя Киану означает на языке племени, проживающего на Гавайских островах, "прохладный горный ветер". Отец оставил семью, когда мальчику было шесть лет, и с тех пор почти не виделся с сыном. 
+                                После развода Патрисия с детьми через Австралию и Нью-Йорк добралась до Канады. Киану Ривз до сих пор сохраняет канадское гражданство. В начальную школу и четыре средних класса, включая школу исполнительского искусства, Киану Ривз ходил в Торонто. Его всегда больше интересовал театр или хоккей, нежели собственно учеба, и в 17 лет его исключили за плохое поведение и неуспеваемость. 
+                                Расставшись со школой, некоторое время подрабатывал разными способами (заточкой коньков, подрезкой деревьев), и в 1984 году наконец дебютировал на сцене в спектакле «Мальчике-волчонке», который стала в Торонто популярным. Последовало несколько крупных работ на телевидении. На него обратили внимание, и с 1986 года актер начинает сниматься в кино, причем получает сразу несколько ролей, одна из которых — в драме о хоккеистах «Молодая кровь». 
+                                Ривеза идолом молодежи сделал фильм «Невероятные приключения Билла и Теда», где ему удалось точно воспроизвести подростковую ментальность паренька, готового пуститься в путешествие во времени лишь бы сдать экзамен по истории. Созданный им образ очередного пустоголового подростка оказался столь удачным, что Киану Ривза начали отождествлять именно с таким типажом. В 1988 году он сыграл молодого энергичного учителя музыки Даней в «Опасных связях». 
+                                Картина Гаса Ван Сента «Мой собственный штат Айдахо» (1991) современная фантазия на шекспировские темы, стала актёрским триумфом Ривза. Киану Ривз и Ривер Феникс превратили картину в культовый фильм, пользовавшийся неожиданно большим кассовым успехом. По-настоящему популярность к актеру пришла в 1994 году после фильма «Скорость». Изобретательный, отважный мускулистый Джек Трэвен сразу очаровал зрителей. Киану Ривз повзрослел и превратился из кумира тинэйджеров в настоящую «звезду» фильмов действия. 
+                                Посыпались новые предложения, суммы некоторых потенциальных контрактов составляли семь миллионов долларов. Но погоня за деньгами никогда не была определяющим фактором для Киану, и, руководствуясь художественным вкусом и всё тем же нежеланием повторяться, актёр отказался сниматься в «Скорости II». Известен как музыкант группы «Dogstar», где играет на бас-гитаре. Группа выпустила несколько компакт-дисков и постоянно дает концерты не только на территории США и Канады, но и по всему миру</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

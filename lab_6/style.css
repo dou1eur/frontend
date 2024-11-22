@@ -1,4 +1,96 @@
 body {
-    background-color: #b9b9b9; 
+    background: hsla(300, 100%, 10%, 0.137);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: hsl(300, 50%, 90%);
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    color: #4a007f;
+    width: 900px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: x-large;
+    color: #4a007f;
+    margin: 25px 0;
+}
+
+p {
+    font-size: medium;
+    color: #333333;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 32px; /* Размер шрифта для заголовка */
+    margin-bottom: 0; /* Убираем отступ снизу */
+}
+
+/* Стили для кнопок в navbar */
+.navbar-nav .nav-item .nav-link {
+    padding: 12px 24px; /* Увеличиваем padding для лучшего внешнего вида кнопок */
+}
+
+/* Стили для карточек */
+.card-body {
+    font-size: 16px; /* Размер шрифта для текста в карточке */
+}
+
+aside {
+    width: 100%;  /* Убедитесь, что aside занимает всю доступную ширину */
+}
+  
+.scrollspy_container {
+    width: 100%; /* Контейнер для навигации также растягивается */
+}
+  
+.row {
+    width: 100%; /* Убедитесь, что row не ограничивает ширину */
+}
+  
+.list-group {
+    width: 100%; /* Сделаем список навигации на всю ширину */
+}
+
+/* Стили для кнопок в карточках */
+.card-footer .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Стили для списка навигации слева */
+.scrollspy_container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#list-example .list-group-item {
+    cursor: pointer; /* Указываем на возможность клика */
+}
+
+/* Стили для элементов аккордеона */
+.accordion-button {
+    font-size: 18px; /* Размер шрифта для кнопок аккордеона */
+}
+
+.accordion-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
