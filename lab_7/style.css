@@ -1,0 +1,76 @@
+body {
+    background: hsla(300, 100%, 10%, 0.137);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: hsl(300, 50%, 90%);
+    padding: 20px;
+    color: white;
+}
+
+p {
+    font-size: medium;
+    color: #333333;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 20px;
+}
+
+.card-body {
+    font-size: 20px;
+}
+
+aside {
+    width: 100%;
+}
+  
+.scrollspy_container {
+    width: 100%;
+}
+  
+.row {
+    width: 100%;
+}
+  
+.list-group {
+    width: 100%;
+}
+
+.card-footer .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.scrollspy_container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#list-example .list-group-item {
+    cursor: pointer; 
+}
+
+.accordion-button {
+    font-size: 18px;
+}
+
+.accordion-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
