@@ -11,31 +11,8 @@ body {
     color: white;
 }
 
-h1 {
-    font-size: xx-large;
-    text-align: center;
-    color: #4a007f;
-    width: 900px;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-h2 {
-    font-size: x-large;
-    color: #4a007f;
-    margin: 25px 0;
-}
-
-p {
-    font-size: medium;
-    color: #333333;
-    margin: 10px 0;
-    padding: 5px;
-}
-
-ul, ol {
-    margin: 10px 0;
-    padding-left: 20px;
+nav{
+    background-color: grey;
 }
 
 .navbar-brand {
@@ -57,6 +34,7 @@ aside {
   
 .scrollspy_container {
     width: 100%;
+    
 }
   
 .row {
@@ -74,7 +52,6 @@ aside {
 
 .scrollspy_container {
     max-height: 300px;
-    overflow-y: auto;
 }
 
 #list-example .list-group-item {
@@ -87,5 +64,4 @@ aside {
 
 .accordion-body {
     font-size: 16px;
-    line-height: 1.6;
 }
